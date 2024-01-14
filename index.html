@@ -73,7 +73,54 @@
     <a href="#top"> 페이지 상단으로 이동</a>
     <a href="javascript:alert('경고창');">브라우저 경고창</a>
     
-    <h2>이미지 태그</h2>
+    <h2>이미지 태그</h2><!--.는 같은 프로젝트 안을 뜻한다.-->
+    <img src="./img/kakao1.png" alt="카카오 이미지1" style="background-color: blue; width: 100px;">
+    <img src="./img/kakao2.jpg"
+    alt="카카오 이미지2" style=" width: 100px;">
+    <img src="./img/kakao3.gif"
+    alt="카카오 이미지3" style= "width: 100px;">
+    <img src="./img/facebook.svg"
+    alt="페이스 북 로고" style= "width: 100px;"><!-- 확대해도 깨지지 않음-->
+
+    <h2>그루핑이 가능한 태그 : div span</h2>
+
+    <div style = "width : 100%; height : 200px; background-color:#aff;"> 
+        Main 공간
+        <div>대표 이미지</div>
+        <div style="text-align: center;">
+            <img src="./img/kakao2.jpg"
+        alt="카카오 이미지2" style=" width: 100px;">
+        </div>
+    </div>
+
+
+    <div style = "width : 100%; height : 100px; background-color:#ffa;"> Banner 공간</div>
+    <div style = "width : 100%; height : 200px; background-color:#aaf;"> contents 공간</div>
+    <div style = "width : 100%; height : 200px; background-color:#bbb;"> Footer 공간</div>
+    <!--스팬은 스팬 내부에 스팬을 넣을 수 있다// 최종 말단: p 태그 안에 넣는 경우가 있음 div는 그렇지 못함-->
+    <span style="color : red;">
+        오늘의 할일
+        <span style="color: aqua;"> 1. 아침 먹기</span>
+        <a href="">밀키트 주문하기</a>
+    </span>
+
+    <h2> 그밖의 텍스트를 정의하는 태그</h2>
+    <p>강조 태그 : 볼드, 이탤릭 처리</p>
+    <strong>볼드 처리1</strong>
+    <b>볼트 처리2</b>
+    <em>이텔릭 처리1</em>
+    <i>이탤릭 처리2</i>
+
+    <p>취소선 : del</p>
+    <del>취소선</del>
+    <span><del>12000원</del> => 10000원</span>
+
+    <p>상단 표시, 하단 표시</p>
+    <span>아이디<sup style = "color: red;">*</sup></span>
+    <span>CO<sub>2</sub><sup style = "color: red;">*</sup></span>
+
+    <p>글로벌 화폐</p>
+    <span>$99<small>.99</small></span>
 
 </body>
 </html>
